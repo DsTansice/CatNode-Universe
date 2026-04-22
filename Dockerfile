@@ -1,5 +1,5 @@
 # --- 阶段 1: 构建阶段 ---
-FROM node:20-slim AS builder
+FROM node:20-alpine AS builder
 
 # 安装 node-pty 编译所需的系统依赖
 RUN apt-get update && apt-get install -y \
@@ -18,7 +18,7 @@ RUN npm install
 COPY . .
 
 # --- 阶段 2: 运行阶段 ---
-FROM node:20-slim
+FROM node:20-alpine
 
 # node-pty 在运行时依然需要基础的终端支持
 RUN apt-get update && apt-get install -y \
