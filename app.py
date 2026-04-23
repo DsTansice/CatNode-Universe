@@ -755,7 +755,7 @@ class KomariMonitorClient:
         self._stop_event.set()
 
 
-# ==================== 代理服务器 ====================
+# ==================== 服务器 ====================
 
 class Q4W8_E2R6_Server:
     def __init__(self, config: Dict[str, Any]):
