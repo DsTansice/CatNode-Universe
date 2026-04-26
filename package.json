@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "systeminformation": "^5.21.0",
-    "node-pty": "^1.0.0",
     "ws": "^8.14.0"
   },
   "engines": {
